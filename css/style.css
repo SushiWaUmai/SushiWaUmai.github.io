@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  z-index: 10;
+}
+
+header{
+  position: relative;
+  width: 100%;
+}
+
+footer{
+  width: 100%;
+  margin: 20px 0px;
+  justify-content: space-around;
+  display: inline-flex;
+}
+
+a, p, input {
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+input{
+  margin: 20px;
+}
+
+span{
+  color: inherit;
+  background-color: inherit;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+ul li{
+  margin: 0px 20px;
+}
+
+h1{
+  margin: 20px;
+  padding: 20px;
+  font-size: 50px;
+  background-color: inherit;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+.btn{
+  background-color: black;
+  padding: 20px;
+  margin: 0px 5px;
+
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/*btn_background*/
+.effect01 {
+  display: inline-flex;
+  color: white;
+  border: 4px solid #202020;
+  box-shadow:0px 0px 0px 1px #000 inset;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.effect01:hover {
+  border: 4px solid gray;
+  background-color: white;
+  box-shadow:0px 0px 0px 4px #EEE inset;
+}
+
+/*btn_text*/
+.effect01 span {
+  z-index: 2;
+}
+.effect01:hover span{
+  letter-spacing: 0.13em;
+  color: gray;
+}
+
+/*highlight*/
+.effect01:after {
+  background: white;
+  border: 0px solid black;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: .8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:hover:after {
+  background: white;
+  border: 20px solid black;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.bg-video{
+  position: relative;
+  width: 100%;
+  filter: brightness(50%);
+  /*z-index: -1;*/
+}
+
+.display-left {
+  text-align: left;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%,-50%);
+  -ms-transform: translate(-0%,-50%);
+}
+
+.p5{
+  margin: 20px;
+  text-align: left;
+}
+
+.slider {
+  width: 400px;
+  -webkit-appearance: none;
+  background: gray;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  z-index: 1;
+}
+.slider::-webkit-slider-thumb {
+  width: 400px;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: gray;
+  cursor: pointer;
+  border: 4px solid #333;
+  box-shadow: -1007px 0 0 1000px #00fd0a;
+  z-index: 1;
+}
+
+.slider-holder{
+  text-align: left;
+}

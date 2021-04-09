@@ -80,6 +80,16 @@ h3{
   grid-row-gap: 10rem;
 }
 
+.grid-img{
+  width: 100%;
+  transition: transform 0.1s;
+}
+
+.grid-img:hover{
+  transform: rotate(2deg);
+  transition: transform 0.1s;
+}
+
 .btn{
   background-color: black;
   padding: 20px;

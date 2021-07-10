@@ -22,74 +22,129 @@ var repaint = true;
 
 disableFriendlyErrors = true;
 
-function setup(){
-  	canvas = createCanvas(windowWidth * 0.75, windowWidth * 0.75);
-  	canvas.parent(p5Canvas);
-  	angle = PI / 4;
+function setup() {
+    let size = 500;
+    if (windowWidth * 0.75 < 500) size = windowWidth * 0.75;
+    canvas = createCanvas(size, size);
 
-  	createPropSlider(uiHolder, "Angle", 0, PI, angle, 0.01, "slider-holder", "slider", function(val){
-		angle = val;
-		repaint = true;
-  	});
+    canvas.parent(p5Canvas);
+    angle = PI / 4;
 
-  	createPropSlider(uiHolder, "Branches", 0, 5, branches, 1, "slider-holder", "slider", function(val){
-  		branches = val;
-		repaint = true;
-  	});
+    createPropSlider(
+        uiHolder,
+        "Angle",
+        0,
+        PI,
+        angle,
+        0.01,
+        "slider-holder",
+        "slider",
+        function (val) {
+            angle = val;
+            repaint = true;
+        }
+    );
 
-  	createPropSlider(uiHolder, "Max Recursion", 0, 5, maxRecursion, 1, "slider-holder", "slider", function(val){
-  		maxRecursion = val;
-		repaint = true;
-  	});
+    createPropSlider(
+        uiHolder,
+        "Branches",
+        0,
+        5,
+        branches,
+        1,
+        "slider-holder",
+        "slider",
+        function (val) {
+            branches = val;
+            repaint = true;
+        }
+    );
 
-  	createPropSlider(uiHolder, "Length", 0, 500, len, 1, "slider-holder", "slider", function(val){
-  		len = val;
-		repaint = true;
-  	});
+    createPropSlider(
+        uiHolder,
+        "Max Recursion",
+        0,
+        5,
+        maxRecursion,
+        1,
+        "slider-holder",
+        "slider",
+        function (val) {
+            maxRecursion = val;
+            repaint = true;
+        }
+    );
 
-  	createPropSlider(uiHolder, "Length Reduction", 0, 1, lengthReduction, 0.001, "slider-holder", "slider", function(val){
-  		lengthReduction = val;
-		repaint = true;
-  	});
-  	colorMode(HSB);
+    createPropSlider(
+        uiHolder,
+        "Length",
+        0,
+        500,
+        len,
+        1,
+        "slider-holder",
+        "slider",
+        function (val) {
+            len = val;
+            repaint = true;
+        }
+    );
+
+    createPropSlider(
+        uiHolder,
+        "Length Reduction",
+        0,
+        1,
+        lengthReduction,
+        0.001,
+        "slider-holder",
+        "slider",
+        function (val) {
+            lengthReduction = val;
+            repaint = true;
+        }
+    );
+    colorMode(HSB);
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth * 0.75, windowWidth * 0.75);
-	repaint = true;
+    let size = 500;
+    if (windowWidth * 0.75 < 500) size = windowWidth * 0.75;
+
+    resizeCanvas(size, size);
+    repaint = true;
 }
 
-function draw(){
-  	if(repaint){
-	  	background(0);
+function draw() {
+    if (repaint) {
+        background(0);
 
-	  	halfAngle = angle * (branches - 1) * 0.5;
+        halfAngle = angle * (branches - 1) * 0.5;
 
-	  	stroke(0, 255, 255);
-	  	translate(width / 2, height);
-	  	line(0, 0, 0, -len);
-	  	translate(0, -len);
-	  	branch(0, len);
+        stroke(0, 255, 255);
+        translate(width / 2, height);
+        line(0, 0, 0, -len);
+        translate(0, -len);
+        branch(0, len);
 
-	  	repaint = false;
-  	}
+        repaint = false;
+    }
 }
 
-function branch(recursion, length){
-	stroke(grayToColor(recursion / maxRecursion), 255, 255);
-	if(recursion == maxRecursion)
-		return;
-	for(let i = 0; i < branches; i++){
-		push();
-		rotate(i * angle - halfAngle);
-		line(0, 0, 0, -length);
-		translate(0, -length);
-		branch(recursion + 1, length * lengthReduction);
-		pop();
-	}
+function branch(recursion, length) {
+    stroke(grayToColor(recursion / maxRecursion), 255, 255);
+    if (recursion == maxRecursion) return;
+    for (let i = 0; i < branches; i++) {
+        push();
+        rotate(i * angle - halfAngle);
+        line(0, 0, 0, -length);
+        translate(0, -length);
+        branch(recursion + 1, length * lengthReduction);
+        pop();
+    }
 }
 
-function grayToColor(val){
-  val *= 360;
-  return (val) % 360;
+function grayToColor(val) {
+    val *= 360;
+    return val % 360;
 }

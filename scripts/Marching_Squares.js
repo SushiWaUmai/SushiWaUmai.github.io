@@ -73,7 +73,10 @@ const indecies = [
 ];
 
 function setup() {
-    var canvas = createCanvas(windowWidth * 0.75, windowWidth * 0.75);
+    let size = 500;
+    if (windowWidth * 0.75 < 500) size = windowWidth * 0.75;
+
+    var canvas = createCanvas(size, size);
     canvas.parent("p5-canvas");
     initValues();
     background(0);
@@ -83,7 +86,10 @@ function setup() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth * 0.75, windowWidth * 0.75);
+    let size = 500;
+    if (windowWidth * 0.75 < 500) size = windowWidth * 0.75;
+
+    resizeCanvas(size, size);
 }
 
 function setupRangeSliders() {

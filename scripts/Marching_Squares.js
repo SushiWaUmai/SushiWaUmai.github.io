@@ -69,13 +69,18 @@ const indecies =
 
 
 function setup() {
-  var canvas = createCanvas(750, 750);
+  var canvas = createCanvas(windowWidth * 0.75, windowWidth * 0.75);
   canvas.parent("p5-canvas");
   initValues();
   background(0);
   gridColor = color(64, 64, 64);
   frameRate(fps);
   setupRangeSliders();
+}
+
+
+function windowResized() {
+    resizeCanvas(windowWidth * 0.75, windowWidth * 0.75);
 }
 
 function setupRangeSliders() {

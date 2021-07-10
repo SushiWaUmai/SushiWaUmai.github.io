@@ -26,6 +26,7 @@ function createPropSlider(parent, label, min, max, value, stepSize, sliderHolder
   slider.setAttribute("max", max);
   slider.setAttribute("value", value);
   slider.setAttribute("step", stepSize);
+  slider.setAttribute("style", "width: 90%");
   sliderLabel.innerHTML = label;
   slider.oninput = function() {
     inputField.value = this.value;

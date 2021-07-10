@@ -23,7 +23,7 @@ var repaint = true;
 disableFriendlyErrors = true;
 
 function setup(){
-  	canvas = createCanvas(750, 750);
+  	canvas = createCanvas(windowWidth * 0.75, windowWidth * 0.75);
   	canvas.parent(p5Canvas);
   	angle = PI / 4;
 
@@ -52,6 +52,11 @@ function setup(){
 		repaint = true;
   	});
   	colorMode(HSB);
+}
+
+function windowResized() {
+    resizeCanvas(windowWidth * 0.75, windowWidth * 0.75);
+	repaint = true;
 }
 
 function draw(){

@@ -27,7 +27,7 @@ export default function Home() {
             <Image
               width={128}
               height={128}
-              src="/../public/Sushi.png"
+              src="/Sushi.png"
               alt="Sushi"
               className="rounded"
             />

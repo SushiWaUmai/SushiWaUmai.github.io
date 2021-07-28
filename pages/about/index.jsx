@@ -25,7 +25,7 @@ export default function AboutPage() {
             <Image
               width={256}
               height={256}
-              src="/../public/Sushi.png"
+              src="/Sushi.png"
               alt="Sushi"
               className="rounded"
             />

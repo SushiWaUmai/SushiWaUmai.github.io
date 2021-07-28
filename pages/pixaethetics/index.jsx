@@ -26,10 +26,10 @@ export default function PixelartGeneratorPage() {
     let url = URL.createObjectURL(file);
     setPreviewImageUrl(url);
     setInputfileName(file.name);
-    showImage(url);
+    showImage(url, true);
   }
 
-  function showImage(url) {
+  function showImage(url, isLocal = false) {
     var img = new window.Image();
     img.addEventListener("load", function () {
       let canvas = previewCanvasElement.current;
@@ -55,8 +55,8 @@ export default function PixelartGeneratorPage() {
       targetWidthElement.current.value = currentTargetWidth;
       targetHeightElement.current.value = currentTargetHeight;
     });
+    if (isLocal) img.crossOrigin = "";
     img.src = url;
-    // img.crossOrigin = "";
   }
 
   function processImg() {
@@ -65,7 +65,6 @@ export default function PixelartGeneratorPage() {
 
       let img = cv.imread(previewCanvasElement.current);
 
-      console.log(targetWidth, targetHeight, targetColors);
       const [result, previewImg] = pixelateImage(
         img,
         targetWidth,
@@ -83,7 +82,6 @@ export default function PixelartGeneratorPage() {
 
   useEffect(() => {
     showImage("https://via.placeholder.com/250x250?text=Click+to+upload+file");
-    console.log("grab");
   }, []);
 
   return (

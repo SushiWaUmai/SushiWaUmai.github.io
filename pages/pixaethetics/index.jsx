@@ -56,7 +56,7 @@ export default function PixelartGeneratorPage() {
       targetHeightElement.current.value = currentTargetHeight;
     });
     img.src = url;
-    img.crossOrigin = "";
+    // img.crossOrigin = "";
   }
 
   function processImg() {
@@ -82,7 +82,7 @@ export default function PixelartGeneratorPage() {
   }
 
   useEffect(() => {
-    showImage("http://placehold.it/250x250&text=Click to upload file");
+    showImage("https://via.placeholder.com/250x250?text=Click+to+upload+file");
     console.log("grab");
   }, []);
 

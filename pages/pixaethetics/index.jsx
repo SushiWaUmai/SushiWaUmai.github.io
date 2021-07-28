@@ -83,6 +83,7 @@ export default function PixelartGeneratorPage() {
 
   useEffect(() => {
     showImage("http://placehold.it/250x250&text=Click to upload file");
+    console.log("grab");
   }, []);
 
   return (

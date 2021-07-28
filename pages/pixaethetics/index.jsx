@@ -56,6 +56,7 @@ export default function PixelartGeneratorPage() {
       targetHeightElement.current.value = currentTargetHeight;
     });
     img.src = url;
+    img.crossOrigin = "";
   }
 
   function processImg() {

@@ -31,6 +31,8 @@ export default function PixelartGeneratorPage() {
 
   function showImage(url, isLocal = false) {
     var img = new window.Image();
+    if (isLocal) img.crossOrigin = "Anonymous";
+    
     img.addEventListener("load", function () {
       let canvas = previewCanvasElement.current;
 
@@ -55,7 +57,6 @@ export default function PixelartGeneratorPage() {
       targetWidthElement.current.value = currentTargetWidth;
       targetHeightElement.current.value = currentTargetHeight;
     });
-    if (isLocal) img.crossOrigin = "";
     img.src = url;
   }
 

@@ -1,11 +1,11 @@
 import React from "react";
 import Script from "next/script";
 
-export default function OpenCVLoaderComponent() {
+export default React.memo(function OpenCVLoaderComponent() {
   function onOpenCvReady() {
     console.log("OpenCV Ready");
   }
-  
+
   return (
     <div>
       <Script
@@ -16,4 +16,4 @@ export default function OpenCVLoaderComponent() {
       ></Script>
     </div>
   );
-}
+});

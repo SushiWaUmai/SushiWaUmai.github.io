@@ -26,12 +26,11 @@ export default function PixelartGeneratorPage() {
     let url = URL.createObjectURL(file);
     setPreviewImageUrl(url);
     setInputfileName(file.name);
-    showImage(url, true);
+    showImage(url);
   }
 
-  function showImage(url, isLocal = false) {
+  function showImage(url) {
     var img = new window.Image();
-    if (isLocal) img.crossOrigin = "Anonymous";
     
     img.addEventListener("load", function () {
       let canvas = previewCanvasElement.current;
@@ -64,7 +63,10 @@ export default function PixelartGeneratorPage() {
     if (previewImageUrl) {
       setIsProcessing(true);
 
-      let img = cv.imread(previewCanvasElement.current);
+      let previewCanvas = previewCanvasElement.current;
+      let imgData = previewCanvas.getContext("2d").getImageData(0, 0, previewCanvas.width, previewCanvas.height);
+      let img = cv.matFromImageData(imgData);
+      // let img = cv.imread(previewCanvasElement.current);
 
       const [result, previewImg] = pixelateImage(
         img,

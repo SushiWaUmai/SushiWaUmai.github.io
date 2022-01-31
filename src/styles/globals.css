@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-peach text-charleston dark:bg-charleston dark:text-peach;
+}
+
+nav {
+  @apply bg-white dark:bg-gray-800;
+}

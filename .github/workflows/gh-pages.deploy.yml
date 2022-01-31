@@ -37,7 +37,7 @@ jobs:
             ${{ runner.OS }}-
       - name: Build
         run: |
-          pnpm i --legacy-peer-deps
+          pnpm i
           pnpm run build
           pnpm run export
           touch ./out/.nojekyll

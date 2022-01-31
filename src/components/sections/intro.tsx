@@ -1,5 +1,3 @@
-import Image from "next/image";
-import SocialMedia from "../socialmedia";
 import { BsGithub, BsInstagram } from "react-icons/bs";
 import { FaItchIo } from "react-icons/fa";
 
@@ -28,12 +26,10 @@ const Intro: React.FC<IntroProps> = () => {
           </figure>
         </div>
         <div className="m-5 flex justify-center md:float-left md:block">
-          <Image
+          <img
             src="/images/Sushi.png"
-            width={256}
-            height={256}
             alt="SushiWaUmai's Profile Picture"
-            className="rounded-full"
+            className="h-[256px] w-[256px] rounded-full"
           />
         </div>
       </div>

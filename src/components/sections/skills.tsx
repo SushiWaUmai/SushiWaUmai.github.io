@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface SkillsProps {}
 
 const Skills: React.FC<SkillsProps> = () => {
@@ -28,11 +26,10 @@ const Skills: React.FC<SkillsProps> = () => {
                 </p>
               </div>
               <div>
-                <Image
+                <img
                   src="https://picsum.photos/128"
-                  width={128}
-                  height={128}
                   alt="Web Development Example"
+                  className="h-128 w-128"
                 />
               </div>
             </div>
@@ -48,11 +45,10 @@ const Skills: React.FC<SkillsProps> = () => {
                 </p>
               </div>
               <div>
-                <Image
+                <img
                   src="https://picsum.photos/128"
-                  width={128}
-                  height={128}
                   alt="Game Development Example"
+                  className="h-[128px] w-[128px]"
                 />
               </div>
             </div>

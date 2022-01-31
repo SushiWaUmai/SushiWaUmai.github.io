@@ -1,11 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth;
+}
+
 body {
-  @apply bg-peach text-charleston dark:bg-charleston dark:text-peach;
+  @apply bg-charleston font-zen text-peach;
 }
 
 nav {
-  @apply bg-white dark:bg-gray-800;
+  @apply bg-jungle text-peach;
 }

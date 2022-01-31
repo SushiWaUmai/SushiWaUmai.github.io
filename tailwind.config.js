@@ -2,6 +2,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        zen: ["Zen Kurenaido", "sans-serif"],
+      },
       colors: {
         current: "currentColor",
         peach: "#f7dba7",

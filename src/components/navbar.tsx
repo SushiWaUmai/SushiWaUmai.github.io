@@ -7,8 +7,15 @@ const Navbar: React.FC<NavbarProps> = () => {
         <a href="#home">Home</a>
       </span>
       <span>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#skills" className="m-3">
+          Skills
+        </a>
+        <a href="#projects" className="m-3">
+          Projects
+        </a>
+        <a href="#contact" className="m-3">
+          Contact
+        </a>
       </span>
     </nav>
   );

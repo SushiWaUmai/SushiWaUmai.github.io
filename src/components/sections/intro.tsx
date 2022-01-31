@@ -29,7 +29,7 @@ const Intro: React.FC<IntroProps> = () => {
         </div>
         <div className="m-5 flex justify-center md:float-left md:block">
           <Image
-            src="/Sushi.png"
+            src="/images/Sushi.png"
             width={256}
             height={256}
             alt="SushiWaUmai's Profile Picture"

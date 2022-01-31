@@ -37,9 +37,10 @@ jobs:
             ${{ runner.OS }}-
       - name: Build
         run: |
-          npm i --legacy-peer-deps
-          npm run build
-          npm run export
+          pnpm i --legacy-peer-deps
+          pnpm run build
+          pnpm run export
+          touch ./out/.nojekyll
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.3

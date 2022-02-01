@@ -26,11 +26,15 @@ const Intro: React.FC<IntroProps> = () => {
           </figure>
         </div>
         <div className="m-5 flex justify-center md:float-left md:block">
-          <img
-            src="/images/Sushi.png"
-            alt="SushiWaUmai's Profile Picture"
-            className="h-[256px] w-[256px] rounded-full"
-          />
+          <div className="h-[256px] w-[256px]  bg-jungle rounded-full p-3">
+            <div className="bg-gradient-to-br from-copper to-tumbleweed rounded-full p-1">
+              <img
+                src="/images/Sushi.png"
+                alt="SushiWaUmai's Profile Picture"
+                className="rounded-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </header>

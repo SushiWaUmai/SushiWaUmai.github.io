@@ -16,7 +16,7 @@ const Skills: React.FC<SkillsProps> = () => {
 
           <br />
           <figure className="mx-5 mt-5">
-            <div className="flex md:flex-row flex-col gap-x-5">
+            <div className="flex align-middle items-center md:flex-row flex-col gap-x-5">
               <div>
                 <h3 className="underline text-xl xl:text-3xl">
                   Web Development
@@ -30,11 +30,11 @@ const Skills: React.FC<SkillsProps> = () => {
                 </p>
               </div>
 
-              <div className="flex-grow">
+              <div className="w-[128px] h-[128px]">
                 <img
                   src="https://picsum.photos/128"
                   alt="Web Development Example"
-                  className="h-[128px] w-[128px]"
+                  className="h-full w-full"
                 />
               </div>
             </div>
@@ -53,11 +53,11 @@ const Skills: React.FC<SkillsProps> = () => {
                 </p>
               </div>
 
-              <div className="flex-grow">
+              <div className="w-[128px] h-[128px]">
                 <img
                   src="https://picsum.photos/128"
                   alt="Game Development Example"
-                  className="h-[128px] w-[128px]"
+                  className="h-full w-full"
                 />
               </div>
             </div>

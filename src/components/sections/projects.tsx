@@ -11,10 +11,15 @@ const Projects: React.FC<ProjectsProps> = () => {
         ></path>
       </svg>
       <div className="container mx-auto">
-        <h2>Projects</h2>
-        <figure>
-          <article>Project 1</article>
-          <article>Project 2</article>
+        <h2 className="text-3xl xl:text-5xl">Past Projects</h2>
+
+        <br />
+
+        <figure className="flex gap-x-5">
+          <article className="bg-gradient-to-br from-tumbleweed to-copper rounded p-1">
+            <img src="https://picsum.photos/128/256" alt="Project1" />
+            <div className="bg-stone-800 px-5 py-3">Project 1</div>
+          </article>
         </figure>
       </div>
     </section>

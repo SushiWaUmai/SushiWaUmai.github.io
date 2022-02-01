@@ -12,12 +12,16 @@ const Skills: React.FC<SkillsProps> = () => {
       </svg>
       <div className="container mx-auto">
         <div className="mx-5">
-          <h2 className="texl-xl md:text-3xl xl:text-5xl">What I can offer</h2>
+          <h2 className="text-3xl xl:text-5xl">What I can offer</h2>
+
           <br />
           <figure className="mx-5 mt-5">
-            <div className="flex gap-x-5">
+            <div className="flex md:flex-row flex-col gap-x-5">
               <div>
-                <h3 className="md:text-xl xl:text-3xl">Web Development</h3>
+                <h3 className="underline text-xl xl:text-3xl">
+                  Web Development
+                </h3>
+
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Quisquam aliquid ab esse cupiditate possimus autem sint saepe
@@ -25,18 +29,22 @@ const Skills: React.FC<SkillsProps> = () => {
                   excepturi atque, beatae veniam tempore?
                 </p>
               </div>
-              <div>
+
+              <div className="flex-grow">
                 <img
                   src="https://picsum.photos/128"
                   alt="Web Development Example"
-                  className="h-128 w-128"
+                  className="h-[128px] w-[128px]"
                 />
               </div>
             </div>
             <br />
-            <div className="flex flex-row gap-x-5 text-left md:flex-row-reverse md:text-right">
+            <div className="flex flex-col gap-x-5 text-left md:flex-row-reverse md:text-right">
               <div>
-                <h3 className="md:text-xl xl:text-3xl">Game Development</h3>
+                <h3 className="underline text-xl xl:text-3xl">
+                  Game Development
+                </h3>
+
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                   vitae enim quae nam modi possimus molestias voluptates
@@ -44,7 +52,8 @@ const Skills: React.FC<SkillsProps> = () => {
                   maiores. Pariatur recusandae voluptate blanditiis?
                 </p>
               </div>
-              <div>
+
+              <div className="flex-grow">
                 <img
                   src="https://picsum.photos/128"
                   alt="Game Development Example"

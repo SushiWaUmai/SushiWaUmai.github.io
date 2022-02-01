@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  @apply bg-charleston font-zen text-peach;
+  @apply bg-charleston font-zen text-lg text-peach;
 }
 
 nav {

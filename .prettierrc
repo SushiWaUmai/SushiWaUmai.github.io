@@ -4,6 +4,6 @@
   "singleQuote": false,
   "tabWidth": 2,
   "printWidth": 80,
-  "endOfLine": "lf",
+  "endOfLine": "auto",
   "tailwindConfig": "./tailwind.config.js"
 }

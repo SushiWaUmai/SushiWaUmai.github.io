@@ -1,3 +1,5 @@
+import ProjectCard from "../projectcard";
+
 interface ProjectsProps {}
 
 const Projects: React.FC<ProjectsProps> = () => {
@@ -16,10 +18,11 @@ const Projects: React.FC<ProjectsProps> = () => {
         <br />
 
         <figure className="flex gap-x-5">
-          <article className="bg-gradient-to-br from-tumbleweed to-copper rounded p-1">
-            <img src="https://picsum.photos/128/256" alt="Project1" />
-            <div className="bg-stone-800 px-5 py-3">Project 1</div>
-          </article>
+          <ProjectCard
+            name="Project 1"
+            description="Test Description"
+            imgURL="./images/Sushi.png"
+          />
         </figure>
       </div>
     </section>

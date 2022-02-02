@@ -22,7 +22,7 @@ const Skills: React.FC<SkillsProps> = () => {
                   Web Development
                 </h3>
 
-                <p>
+                <p className="my-5">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Quisquam aliquid ab esse cupiditate possimus autem sint saepe
                   repudiandae unde architecto deleniti corrupti qui quod fugiat
@@ -30,7 +30,7 @@ const Skills: React.FC<SkillsProps> = () => {
                 </p>
               </div>
 
-              <div className="w-[128px] h-[128px]">
+              <div className="w-[128px] h-[128px] aspect-square m-5">
                 <img
                   src="https://picsum.photos/128"
                   alt="Web Development Example"
@@ -39,13 +39,13 @@ const Skills: React.FC<SkillsProps> = () => {
               </div>
             </div>
             <br />
-            <div className="flex flex-col gap-x-5 text-left md:flex-row-reverse md:text-right">
+            <div className="flex align-middle items-center flex-col gap-x-5 text-left md:flex-row-reverse md:text-right">
               <div>
                 <h3 className="underline text-xl xl:text-3xl">
                   Game Development
                 </h3>
 
-                <p>
+                <p className="my-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                   vitae enim quae nam modi possimus molestias voluptates
                   officiis? Eaque aut dolorem hic ducimus quae similique
@@ -53,7 +53,7 @@ const Skills: React.FC<SkillsProps> = () => {
                 </p>
               </div>
 
-              <div className="w-[128px] h-[128px]">
+              <div className="w-[128px] h-[128px] aspect-square m-5">
                 <img
                   src="https://picsum.photos/128"
                   alt="Game Development Example"

@@ -22,6 +22,7 @@ const Projects: React.FC<ProjectsProps> = () => {
             name="Project 1"
             description="Test Description"
             imgURL="./images/Sushi.png"
+            projectURL="https://www.google.com"
           />
         </figure>
       </div>

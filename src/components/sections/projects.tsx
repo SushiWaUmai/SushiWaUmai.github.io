@@ -19,10 +19,10 @@ const Projects: React.FC<ProjectsProps> = () => {
 
         <figure className="flex gap-x-5">
           <ProjectCard
-            name="Project 1"
-            description="Test Description"
-            imgURL="./images/Sushi.png"
-            projectURL="https://www.google.com"
+            name="Mandelbrot Set Visualization"
+            description="Mandelbrot Set implemented in TypeScript and WebGL"
+            imgURL="./images/projects/Mandelbrot.png"
+            projectURL="https://sushiwaumai.github.io/Mandelbrot-Visualization/"
           />
         </figure>
       </div>

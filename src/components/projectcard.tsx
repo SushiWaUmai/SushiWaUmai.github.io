@@ -24,8 +24,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           className="flex justify-end mt-5 select-none"
           rel="noreferrer"
         >
-          <div className="bg-stone-600 p-1 rounded">
-            <div className="bg-stone-700 py-1 px-2">Go to Project</div>
+          <div className="bg-copper p-0.5 rounded">
+            <div className="bg-charleston py-1 px-2">Go to Project</div>
           </div>
         </a>
       </div>

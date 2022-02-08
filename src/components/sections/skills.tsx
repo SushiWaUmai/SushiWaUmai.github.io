@@ -1,3 +1,5 @@
+import TrackingDiv from "../trackingdiv";
+
 interface SkillsProps {}
 
 const Skills: React.FC<SkillsProps> = () => {

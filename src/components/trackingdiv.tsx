@@ -15,11 +15,13 @@ const mapValue = (
 
 interface TrackingDivProps {
   hoverVariant?: VariantLabels | TargetAndTransition | undefined;
+  rotationLimit?: number;
 }
 
 const TrackingDiv: React.FC<TrackingDivProps> = ({
   children,
-  hoverVariant,
+  hoverVariant = { scale: 1.1 },
+  rotationLimit = 45
 }) => {
   const [isHovered, setHovered] = useState(false);
 
@@ -65,7 +67,7 @@ const TrackingDiv: React.FC<TrackingDivProps> = ({
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
       ref={sizeObject}
-      whileHover={hoverVariant ?? { scale: 1.1 }}
+      whileHover={hoverVariant}
     >
       {sizeObject.current && (
         <motion.div
@@ -76,15 +78,15 @@ const TrackingDiv: React.FC<TrackingDivProps> = ({
                     y,
                     0,
                     sizeObject.current.clientWidth,
-                    -45,
-                    45,
+                    -rotationLimit,
+                    rotationLimit,
                   ),
                   rotateY: mapValue(
                     x,
                     0,
                     sizeObject.current.clientHeight,
-                    -45,
-                    45,
+                    -rotationLimit,
+                    rotationLimit,
                   ),
                 }
               : { rotateX: 0, rotateY: 0 }

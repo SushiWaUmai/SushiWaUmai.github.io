@@ -10,6 +10,7 @@ const Intro: React.FC<IntroProps> = () => {
       <div className="container mx-auto mt-8 flex flex-col gap-x-5 sm:flex-row-reverse">
         <div className="m-5 flex-grow">
           <h1 className="text-5xl xl:text-8xl">Eugene Matsumura</h1>
+
           <br />
           <span className="text-xl text-tumbleweed md:text-3xl xl:text-5xl">
             SushiWaUmai
@@ -27,7 +28,7 @@ const Intro: React.FC<IntroProps> = () => {
           </figure>
         </div>
         <div className="m-5 flex justify-center md:float-left md:block">
-          <TrackingDiv>
+          <TrackingDiv rotationLimit={20}>
             <div className="h-[256px] w-[256px]  bg-jungle rounded-full p-3">
               <div className="bg-gradient-to-br from-copper to-tumbleweed rounded-full p-1">
                 <img

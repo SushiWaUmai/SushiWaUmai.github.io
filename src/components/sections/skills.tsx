@@ -1,3 +1,4 @@
+import FadeInDiv from "../fadeindiv";
 import TrackingDiv from "../trackingdiv";
 
 interface SkillsProps {}
@@ -18,51 +19,55 @@ const Skills: React.FC<SkillsProps> = () => {
 
           <br />
           <figure className="mx-5 mt-5">
-            <div className="flex align-middle items-center md:flex-row flex-col gap-x-5">
-              <div>
-                <h3 className="underline text-xl xl:text-3xl">
-                  Web Development
-                </h3>
+            <FadeInDiv>
+              <div className="flex align-middle items-center md:flex-row flex-col gap-x-5">
+                <div>
+                  <h3 className="underline text-xl xl:text-3xl">
+                    Web Development
+                  </h3>
 
-                <p className="my-5">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Quisquam aliquid ab esse cupiditate possimus autem sint saepe
-                  repudiandae unde architecto deleniti corrupti qui quod fugiat
-                  excepturi atque, beatae veniam tempore?
-                </p>
-              </div>
+                  <p className="my-5">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quisquam aliquid ab esse cupiditate possimus autem sint
+                    saepe repudiandae unde architecto deleniti corrupti qui quod
+                    fugiat excepturi atque, beatae veniam tempore?
+                  </p>
+                </div>
 
-              <div className="w-[128px] h-[128px] aspect-square m-5">
-                <img
-                  src="https://picsum.photos/128"
-                  alt="Web Development Example"
-                  className="h-full w-full"
-                />
+                <div className="w-[128px] h-[128px] aspect-square m-5">
+                  <img
+                    src="https://picsum.photos/128"
+                    alt="Web Development Example"
+                    className="h-full w-full"
+                  />
+                </div>
               </div>
-            </div>
+            </FadeInDiv>
             <br />
-            <div className="flex align-middle items-center flex-col gap-x-5 text-left md:flex-row-reverse md:text-right">
-              <div>
-                <h3 className="underline text-xl xl:text-3xl">
-                  Game Development
-                </h3>
+            <FadeInDiv>
+              <div className="flex align-middle items-center flex-col gap-x-5 text-left md:flex-row-reverse md:text-right">
+                <div>
+                  <h3 className="underline text-xl xl:text-3xl">
+                    Game Development
+                  </h3>
 
-                <p className="my-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  vitae enim quae nam modi possimus molestias voluptates
-                  officiis? Eaque aut dolorem hic ducimus quae similique
-                  maiores. Pariatur recusandae voluptate blanditiis?
-                </p>
-              </div>
+                  <p className="my-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Unde vitae enim quae nam modi possimus molestias voluptates
+                    officiis? Eaque aut dolorem hic ducimus quae similique
+                    maiores. Pariatur recusandae voluptate blanditiis?
+                  </p>
+                </div>
 
-              <div className="w-[128px] h-[128px] aspect-square m-5">
-                <img
-                  src="https://picsum.photos/128"
-                  alt="Game Development Example"
-                  className="h-full w-full"
-                />
+                <div className="w-[128px] h-[128px] aspect-square m-5">
+                  <img
+                    src="https://picsum.photos/128"
+                    alt="Game Development Example"
+                    className="h-full w-full"
+                  />
+                </div>
               </div>
-            </div>
+            </FadeInDiv>
           </figure>
         </div>
       </div>

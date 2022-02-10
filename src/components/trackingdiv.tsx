@@ -21,7 +21,7 @@ interface TrackingDivProps {
 const TrackingDiv: React.FC<TrackingDivProps> = ({
   children,
   hoverVariant = { scale: 1.1 },
-  rotationLimit = 45
+  rotationLimit = 45,
 }) => {
   const [isHovered, setHovered] = useState(false);
 

@@ -13,18 +13,20 @@ const Projects: React.FC<ProjectsProps> = () => {
         ></path>
       </svg>
       <div className="container mx-auto">
-        <h2 className="text-3xl xl:text-5xl">Past Projects</h2>
+        <div className="mx-5">
+          <h2 className="text-3xl xl:text-5xl">Past Projects</h2>
 
-        <br />
+          <br />
 
-        <figure className="flex gap-x-5">
-          <ProjectCard
-            name="Mandelbrot Set Visualization"
-            description="Mandelbrot Set implemented in TypeScript and WebGL"
-            imgURL="./images/projects/Mandelbrot.png"
-            projectURL="https://sushiwaumai.github.io/Mandelbrot-Visualization/"
-          />
-        </figure>
+          <figure className="flex gap-x-5">
+            <ProjectCard
+              name="Mandelbrot Set Visualization"
+              description="Mandelbrot Set implemented in TypeScript and WebGL"
+              imgURL="./images/projects/Mandelbrot.png"
+              projectURL="https://sushiwaumai.github.io/Mandelbrot-Visualization/"
+            />
+          </figure>
+        </div>
       </div>
     </section>
   );

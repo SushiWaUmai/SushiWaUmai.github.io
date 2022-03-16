@@ -8,7 +8,7 @@ const Melvin: React.FC<MelvinProps> = () => {
       <h1 className="text-5xl text-white">melvin</h1>
       <br />
       <div>
-        <img width="500px" src="./melvin.jpeg" />
+        <img alt="melvin" width="500px" src="./melvin.jpeg" />
       </div>
       <p className="text-xl text-white">yes</p>
     </div>

@@ -4,16 +4,18 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <nav className="flex justify-between p-3">
       <span>
-        <a href="#home">Home</a>
+        <a href="#home" className="inline-block mx-3 btn btn-effect">
+          Home
+        </a>
       </span>
       <span>
-        <a href="#skills" className="m-3">
+        <a href="#skills" className="inline-block mx-3 btn btn-effect">
           Skills
         </a>
-        <a href="#projects" className="m-3">
+        <a href="#projects" className="inline-block mx-3 btn btn-effect">
           Projects
         </a>
-        <a href="#contact" className="m-3">
+        <a href="#contact" className="inline-block mx-3 btn btn-effect">
           Contact
         </a>
       </span>

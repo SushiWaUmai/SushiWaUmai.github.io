@@ -16,13 +16,16 @@ const Intro: React.FC<IntroProps> = () => {
             SushiWaUmai
           </span>
           <figure className="my-5 flex justify-evenly gap-x-5 rounded bg-stone-800 p-5 md:float-right">
-            <a href="https://github.com/SushiWaUmai">
+            <a href="https://github.com/SushiWaUmai" className="btn">
               <BsGithub size={32} />
             </a>
-            <a href="https://sushiwaumai.itch.io/">
+            <a href="https://sushiwaumai.itch.io/" className="btn">
               <FaItchIo size={32} />
             </a>
-            <a href="https://www.instagram.com/eugenematsumura/">
+            <a
+              href="https://www.instagram.com/eugenematsumura/"
+              className="btn"
+            >
               <BsInstagram size={32} />
             </a>
           </figure>

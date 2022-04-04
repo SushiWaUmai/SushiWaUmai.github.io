@@ -11,7 +11,9 @@ const Contact: React.FC<ContactProps> = () => {
         ></path>
       </svg>
       <div className="container mx-auto">
-        <h2 className="text-3xl xl:text-5xl">Contact</h2>
+        <div className="mx-5">
+          <h2 className="text-3xl xl:text-5xl">Contact</h2>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,7 @@
 import FadeInDiv from "../fadeindiv";
-import TrackingDiv from "../trackingdiv";
+import { IoLogoGameControllerB } from "react-icons/Io";
+import { RiStackFill } from "react-icons/ri";
+import { GameDevSkills, WebDevSkills } from "../content";
 
 interface SkillsProps {}
 
@@ -21,24 +23,19 @@ const Skills: React.FC<SkillsProps> = () => {
           <figure className="mx-5 mt-5">
             <FadeInDiv>
               <div className="flex align-middle items-center md:flex-row flex-col gap-x-5">
-                <div>
+                <div className="flex-grow">
                   <h3 className="underline text-xl xl:text-3xl">
                     Web Development
                   </h3>
 
-                  <p className="my-5">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quisquam aliquid ab esse cupiditate possimus autem sint
-                    saepe repudiandae unde architecto deleniti corrupti qui quod
-                    fugiat excepturi atque, beatae veniam tempore?
-                  </p>
+                  <p className="my-5">{WebDevSkills}</p>
                 </div>
 
-                <div className="w-[128px] h-[128px] aspect-square m-5">
-                  <img
-                    src="https://picsum.photos/128"
-                    alt="Web Development Example"
-                    className="h-full w-full"
+                <div className="w-[128px] h-[128px] m-5 text-right">
+                  <RiStackFill
+                    width={128}
+                    height={128}
+                    className="w-[128px] h-[128px]"
                   />
                 </div>
               </div>
@@ -46,24 +43,19 @@ const Skills: React.FC<SkillsProps> = () => {
             <br />
             <FadeInDiv>
               <div className="flex align-middle items-center flex-col gap-x-5 text-left md:flex-row-reverse md:text-right">
-                <div>
+                <div className="flex-grow">
                   <h3 className="underline text-xl xl:text-3xl">
                     Game Development
                   </h3>
 
-                  <p className="my-5">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Unde vitae enim quae nam modi possimus molestias voluptates
-                    officiis? Eaque aut dolorem hic ducimus quae similique
-                    maiores. Pariatur recusandae voluptate blanditiis?
-                  </p>
+                  <p className="my-5">{GameDevSkills}</p>
                 </div>
 
-                <div className="w-[128px] h-[128px] aspect-square m-5">
-                  <img
-                    src="https://picsum.photos/128"
-                    alt="Game Development Example"
-                    className="h-full w-full"
+                <div className="w-[128px] h-[128px] m-5">
+                  <IoLogoGameControllerB
+                    width={128}
+                    height={128}
+                    className="w-[128px] h-[128px]"
                   />
                 </div>
               </div>

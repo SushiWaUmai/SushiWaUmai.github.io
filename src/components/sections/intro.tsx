@@ -1,5 +1,10 @@
-import { BsGithub, BsInstagram } from "react-icons/bs";
-import { FaItchIo } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaItchIo,
+  FaDiscord,
+} from "react-icons/fa";
 import TrackingDiv from "../trackingdiv";
 
 interface IntroProps {}
@@ -17,7 +22,7 @@ const Intro: React.FC<IntroProps> = () => {
           </span>
           <figure className="my-5 flex justify-evenly gap-x-5 rounded bg-stone-800 p-5 md:float-right">
             <a href="https://github.com/SushiWaUmai" className="btn">
-              <BsGithub size={32} />
+              <FaGithub size={32} />
             </a>
             <a href="https://sushiwaumai.itch.io/" className="btn">
               <FaItchIo size={32} />
@@ -26,7 +31,19 @@ const Intro: React.FC<IntroProps> = () => {
               href="https://www.instagram.com/eugenematsumura/"
               className="btn"
             >
-              <BsInstagram size={32} />
+              <FaInstagram size={32} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/eugene-matsumura-68334922b/"
+              className="btn"
+            >
+              <FaLinkedin size={32} />
+            </a>
+            <a
+              href="https://discord.com/users/356155984412147723/"
+              className="btn"
+            >
+              <FaDiscord size={32} />
             </a>
           </figure>
         </div>

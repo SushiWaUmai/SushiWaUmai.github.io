@@ -15,9 +15,6 @@ const Navbar: React.FC<NavbarProps> = () => {
         <a href="#projects" className="inline-block mx-3 btn btn-effect">
           Projects
         </a>
-        <a href="#contact" className="inline-block mx-3 btn btn-effect">
-          Contact
-        </a>
       </span>
     </nav>
   );

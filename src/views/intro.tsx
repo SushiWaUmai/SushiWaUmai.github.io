@@ -5,7 +5,7 @@ import {
   FaItchIo,
   FaDiscord,
 } from "react-icons/fa";
-import TrackingDiv from "../trackingdiv";
+import TrackingDiv from "../components/trackingdiv";
 
 interface IntroProps {}
 

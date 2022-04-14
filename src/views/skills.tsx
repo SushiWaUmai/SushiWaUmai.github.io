@@ -1,7 +1,7 @@
-import FadeInDiv from "../fadeindiv";
+import FadeInDiv from "../components/fadeindiv";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { RiStackFill } from "react-icons/ri";
-import { GameDevSkills, WebDevSkills } from "../content";
+import { GameDevSkills, WebDevSkills } from "../components/content";
 
 interface SkillsProps {}
 

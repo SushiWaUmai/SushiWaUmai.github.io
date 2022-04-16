@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = () => {
       </svg>
       <div className="container mx-auto">
         <div className="m-5 gap-5 flex justify-between flex-col lg:flex-row">
-          <p className="text-xl inline">SushiWaUmai 2020</p>
+          <p className="text-xl inline">SushiWaUmai 2022</p>
           <p className="inline">
             This Website is open source and can be found{" "}
             <div className="text-tumbleweed btn btn-effect inline-block">

@@ -16,16 +16,14 @@ const Skills: React.FC<SkillsProps> = () => {
       </svg>
       <div className="container mx-auto">
         <div className="mx-5">
-          <h2 className="text-3xl xl:text-5xl">What I can offer</h2>
+          <h2 className="text-center text-3xl xl:text-5xl">What I can offer</h2>
 
           <br />
           <figure className="mx-5 mt-5">
             <FadeInDiv>
-              <div className="flex align-middle items-center md:flex-row flex-col gap-x-5">
+              <div className="flex align-middle items-center flex-col gap-x-5 text-left md:flex-row-reverse md:text-left">
                 <div className="flex-grow">
-                  <h3 className="underline text-xl xl:text-3xl">
-                    Web Development
-                  </h3>
+                  <h3 className="text-xl xl:text-3xl">Web Development</h3>
 
                   <p className="my-5">
                     I usually do fullstack (frontend and backend) in TypeScript.
@@ -45,11 +43,9 @@ const Skills: React.FC<SkillsProps> = () => {
             </FadeInDiv>
             <br />
             <FadeInDiv>
-              <div className="flex align-middle items-center flex-col gap-x-5 text-left md:flex-row-reverse md:text-right">
+              <div className="flex align-middle items-center text-left md:flex-row flex-col gap-x-5 md:text-right">
                 <div className="flex-grow">
-                  <h3 className="underline text-xl xl:text-3xl">
-                    Game Development
-                  </h3>
+                  <h3 className="text-xl xl:text-3xl">Game Development</h3>
 
                   <p className="my-5">
                     Unity with C# is my preferred stack in Game Development.

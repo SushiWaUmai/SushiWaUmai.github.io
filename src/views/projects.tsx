@@ -14,11 +14,11 @@ const Projects: React.FC<ProjectsProps> = () => {
       </svg>
       <div className="container mx-auto">
         <div className="mx-5">
-          <h2 className="text-3xl xl:text-5xl">Past Projects</h2>
+          <h2 className="text-center text-3xl xl:text-5xl">Projects</h2>
 
           <br />
 
-          <figure className="flex gap-x-5">
+          <figure className="mx-5 mt-5 flex gap-x-5">
             <ProjectCard
               name="Mandelbrot Set Visualization"
               description="Mandelbrot Set implemented in TypeScript and WebGL"

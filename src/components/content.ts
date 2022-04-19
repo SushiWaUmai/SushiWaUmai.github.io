@@ -1,2 +1,0 @@
-export const WebDevSkills = `I usually do fullstack (frontend and backend) in TypeScript. My preferred stack in full stack development is the PERN stack (PostgreSQL, Express, React, NodeJS).`;
-export const GameDevSkills = `Unity with C# is my preferred stack in Game Development. Processing 3 with Java is also an option for smaller game projects. I'm capable of writing shaders including compute shaders to optimze certain computationally intensive tasks.`;

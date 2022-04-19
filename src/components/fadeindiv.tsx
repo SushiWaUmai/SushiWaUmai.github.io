@@ -8,7 +8,7 @@ const FadeInDiv: React.FC<FadeInDivProps> = ({ children }) => {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
     >
       {children}
     </motion.div>

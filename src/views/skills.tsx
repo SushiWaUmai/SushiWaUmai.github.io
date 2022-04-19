@@ -1,7 +1,6 @@
 import FadeInDiv from "../components/fadeindiv";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { RiStackFill } from "react-icons/ri";
-import { GameDevSkills, WebDevSkills } from "../components/content";
 
 interface SkillsProps {}
 
@@ -28,7 +27,11 @@ const Skills: React.FC<SkillsProps> = () => {
                     Web Development
                   </h3>
 
-                  <p className="my-5">{WebDevSkills}</p>
+                  <p className="my-5">
+                    I usually do fullstack (frontend and backend) in TypeScript.
+                    My preferred stack in full stack development is the PERN
+                    stack (PostgreSQL, Express, React, NodeJS).
+                  </p>
                 </div>
 
                 <div className="w-[128px] h-[128px] m-5 text-right">
@@ -48,7 +51,17 @@ const Skills: React.FC<SkillsProps> = () => {
                     Game Development
                   </h3>
 
-                  <p className="my-5">{GameDevSkills}</p>
+                  <p className="my-5">
+                    Unity with C# is my preferred stack in Game Development.
+                    Processing 3 with Java is also an option for smaller game
+                    projects. I am capable of writing shaders including compute
+                    shaders to optimze certain computationally intensive tasks.
+                    See my{" "}
+                    <div className="text-tumbleweed btn btn-effect inline-block">
+                      <a href="https://sushiwaumai.itch.io/">Itch Page</a>
+                    </div>{" "}
+                    to find my past game projects.
+                  </p>
                 </div>
 
                 <div className="w-[128px] h-[128px] m-5">

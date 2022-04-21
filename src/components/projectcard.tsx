@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectURL,
 }) => {
   return (
-    <article className="bg-stone-800 rounded mx-auto w-1/3 p-2">
+    <article className="bg-stone-800 rounded mx-auto md:w-1/2 xl:w-1/3 p-2">
       <div className="px-5 py-3">
         <h2 className="text-2xl text-center">{name}</h2>
       </div>

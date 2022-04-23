@@ -6,7 +6,7 @@ interface SkillsProps {}
 
 const Skills: React.FC<SkillsProps> = () => {
   return (
-    <section id="skills" className="bg-stone-900">
+    <div className="bg-stone-900">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#1e2d2f"
@@ -14,7 +14,7 @@ const Skills: React.FC<SkillsProps> = () => {
           d="M0,160L80,170.7C160,181,320,203,480,224C640,245,800,267,960,256C1120,245,1280,203,1360,181.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
         ></path>
       </svg>
-      <div className="container mx-auto">
+      <section id="skills" className="container mx-auto">
         <div className="mx-5">
           <h2 className="text-center text-3xl xl:text-5xl">What I can offer</h2>
 
@@ -71,8 +71,8 @@ const Skills: React.FC<SkillsProps> = () => {
             </FadeInDiv>
           </figure>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

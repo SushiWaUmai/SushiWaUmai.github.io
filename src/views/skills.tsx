@@ -53,9 +53,9 @@ const Skills: React.FC<SkillsProps> = () => {
                     projects. I am capable of writing shaders including compute
                     shaders to optimze certain computationally intensive tasks.
                     See my{" "}
-                    <div className="text-tumbleweed btn btn-effect inline-block">
+                    <span className="text-tumbleweed btn btn-effect inline-block">
                       <a href="https://sushiwaumai.itch.io/">Itch Page</a>
-                    </div>{" "}
+                    </span>{" "}
                     to find my past game projects.
                   </p>
                 </div>

@@ -18,10 +18,10 @@ nav {
 
 @layer components {
   .btn {
-    @apply cursor-pointer transform hover:scale-110 transition-all duration-200 ease-out;
+    @apply cursor-pointer transform hover:scale-110 transition-all duration-200 ease-out outline-none focus:scale-125 focus:text-tumbleweed;
   }
 
   .btn-effect {
-    @apply transition duration-200 border-b-2 border-transparent hover:border-tumbleweed;
+    @apply outline-none transition duration-200 border-b-2 border-transparent hover:border-tumbleweed focus:border-tumbleweed;
   }
 }

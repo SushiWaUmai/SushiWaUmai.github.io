@@ -13,8 +13,8 @@ const Home: NextPage = () => {
       <HeadTags />
       <Layout>
         <Navbar />
-        <Intro />
         <main>
+          <Intro />
           <Skills />
           <Projects />
         </main>
